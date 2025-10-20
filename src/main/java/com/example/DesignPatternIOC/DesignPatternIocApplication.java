@@ -5,10 +5,15 @@ import com.example.DesignPatternIOC.creaditCard.CustomerSetter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 
+/**
+ * Spring Boot 啟動類別，負責啟動 IoC 範例並啟用 Servlet 元件掃描。
+ */
 @SpringBootApplication
+@ServletComponentScan
 public class DesignPatternIocApplication {
 
     public static void main(String[] args) {
