@@ -6,6 +6,22 @@
 - 若輸入為英文，請自動以繁體中文回覆並保留技術關鍵詞（如 class、method、bean、IoC）。
 - 回覆時保持專業、簡潔，除非使用者特別要求，不需翻譯專有名詞。
 
+## Code Explanation & Commenting Standard (Traditional Chinese, Mandatory)
+
+- 對 **每一個新建或修改的程式碼**，請一律提供：
+    1) **變更摘要（繁體中文）**：在回覆中以條列清楚說明修改目的、影響範圍、設計取捨與可能的副作用。
+    2) **中文註解（內嵌於程式碼）**：在關鍵邏輯、非直覺判斷、錯誤處理、邊界條件與演算法步驟處，加入簡潔的繁體中文註解。
+    3) **方法／類別層級註解**：以 JavaDoc 或等價註解（繁體中文）描述用途、參數、回傳與可能例外。
+    4) **測試說明**：若有新增/更新測試，說明測試情境與覆蓋的行為（繁體中文）。
+
+- 註解風格要求（以 Java 為例，其他語言比照）：
+    - 內嵌註解：使用 `//` 或 `/* ... */`，重點在「為何這麼做」，避免贅述程式表面語意。
+    - 保留技術關鍵詞原文（如 IoC、bean、Controller、Factory method），其餘以繁體中文敘述。
+
+- 產出格式（回覆時請同時提供）：
+    1) 「變更摘要（繁體中文）」小節
+    2) 「修改後的完整檔案」：含繁體中文註解
+
 ## Project Structure & Module Organization
 
 - `pom.xml` holds the Spring Boot + Maven configuration, targeting Java 25 and the IoC showcase dependencies.
