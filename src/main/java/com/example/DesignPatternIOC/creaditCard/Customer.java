@@ -1,4 +1,4 @@
-package creaditCard;
+package com.example.DesignPatternIOC.creaditCard;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

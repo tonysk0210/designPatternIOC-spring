@@ -1,4 +1,4 @@
-package creaditCard;
+package com.example.DesignPatternIOC.creaditCard;
 
 import org.springframework.stereotype.Component;
 
