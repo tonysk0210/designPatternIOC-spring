@@ -1,5 +1,11 @@
 # Repository Guidelines
 
+## Localization & Language Preference
+
+- 所有 Codex CLI（終端機）回覆應以繁體中文撰寫。
+- 若輸入為英文，請自動以繁體中文回覆並保留技術關鍵詞（如 class、method、bean、IoC）。
+- 回覆時保持專業、簡潔，除非使用者特別要求，不需翻譯專有名詞。
+
 ## Project Structure & Module Organization
 
 - `pom.xml` holds the Spring Boot + Maven configuration, targeting Java 25 and the IoC showcase dependencies.
@@ -44,8 +50,3 @@
 - Prefer Spring stereotypes (`@Component`, `@Service`) and constructor injection to keep the IoC example idiomatic.
 - Document new beans in class-level JavaDoc when their role in the design pattern is non-obvious.
 
-## Localization & Language Preference
-
-- 所有 Codex CLI（終端機）回覆應以繁體中文撰寫。
-- 若輸入為英文，請自動以繁體中文回覆並保留技術關鍵詞（如 class、method、bean、IoC）。
-- 回覆時保持專業、簡潔，除非使用者特別要求，不需翻譯專有名詞。
