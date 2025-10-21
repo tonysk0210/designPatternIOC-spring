@@ -25,14 +25,12 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // 設定回應內容類型為純文字，並指定編碼為 UTF-8
-        response.setContentType("text/plain;charset=UTF-8");
-        // 將簡單訊息寫回給呼叫端，確認 servlet 正常運作
-        response.getWriter().println("Hello from HomeServlet");
+        // 設定回應內容類型為 HTML，並指定編碼為 UTF-8
+        response.setContentType("text/html;charset=UTF-8");
         // 在請求屬性中設定使用者名稱，供 JSP 頁面使用
         request.setAttribute("userName", "Anthony");
-        // 轉發請求至 JSP 頁面
-        request.getRequestDispatcher("home.jsp").forward(request, response);
+        // 轉發請求至 JSP 頁面（放在 WEB-INF 下避免直接存取）
+        request.getRequestDispatcher("/WEB-INF/jsp/home.jsp").forward(request, response);
 
     }
 }
