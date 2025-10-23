@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 
-@WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/home")
 public class UserAgentFilter implements Filter {
     private static final Logger log = LoggerFactory.getLogger(UserAgentFilter.class);
 

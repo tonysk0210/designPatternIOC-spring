@@ -13,9 +13,7 @@
 <body>
   <div class="card">
     <h1>存取被拒絕</h1>
-    <p>本次請求已被系統拒絕。如有疑問請聯絡管理員。</p>
-
-    <p><strong>User-Agent:</strong> ${userAgent}</p>
+    <p>Use Chrome browser。</p>
 
     <p><a class="button" href="${pageContext.request.contextPath}/">回到首頁</a></p>
   </div>
